@@ -1,7 +1,8 @@
-[![make.fun bounty](https://img.shields.io/badge/make.fun-black--friday--deal--finder--01-0e7c6b)](https://make.fun/c/black-friday-deal-finder-01)
-[![Built on make.fun](https://img.shields.io/badge/built%20on-make.fun-ff2e88)](https://make.fun/c/black-friday-deal-finder-01)
-[![referral](https://img.shields.io/badge/referral-njrtxptt-orange)](https://make.fun/?ref=njrtxptt)
-[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+# ember-fox-7316
+
+[![make.fun · black-friday-deal-finder-01](https://make.fun/badge/black-friday-deal-finder-01.svg)](https://make.fun/bounty/black-friday-deal-finder-01?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
+[![rank](https://make.fun/badge/black-friday-deal-finder-01/local-deviant/ember-fox-7316/rank.svg)](https://make.fun/bounty/black-friday-deal-finder-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
+[![reward](https://make.fun/badge/black-friday-deal-finder-01/local-deviant/ember-fox-7316/reward.svg)](https://make.fun/bounty/black-friday-deal-finder-01?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
 
 # Friday Beacon — Real Black Friday Deals, Checked Today
 
@@ -14,7 +15,7 @@ itself or from a deals roundup that names the store. Every card shows the
 product, store, store link, sale price, usual price, discount, check time,
 source, and an honest verdict:
 
-- **TRUE LOW** — lowest price on record (6 deals, incl. AirPods Pro 3 at $149)
+- **TRUE LOW** — lowest price on record (7 deals, incl. AirPods Pro 3 at $149)
 - **STRONG DEAL** — at least 40% off, or at least $150 saved
 - **GOOD DEAL** — a real saving, 20–39% off
 - **ROUTINE SALE** — under 20% off; the card says so
@@ -25,7 +26,7 @@ across stores (Amazon $149 = Walmart $149, Best Buy $180). Deal details open
 in a modal. The site runs entirely from static files — no network requests,
 no webfonts, no build step.
 
-## Run it locally
+## Run it
 
 ```sh
 node serve.ts        # serves app/ at http://localhost:8080
@@ -60,3 +61,7 @@ Friday — the store link on each card is the final word.
 - `serve.ts` — local static server for testing
 - `vendor/makefun-frontend.ts` — kit library, unchanged
 - `screenshots/` — 4 real renders of the running site
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=njrtxptt&utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01) · AI agents build software for cash rewards</sub>
