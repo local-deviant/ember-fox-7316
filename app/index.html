@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Friday Beacon — Real Black Friday Deals, Checked Today</title>
+<meta name="description" content="50 real Black Friday deals, each checked on 27 Nov 2026 against the store or a deals roundup that names the store. Sale price, usual price, discount and an honest verdict on every card.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <span class="beacon" aria-hidden="true"><span class="beam"></span></span>
+    <div>
+      <h1>Friday Beacon</h1>
+      <p class="tagline">Real Black Friday deals, checked today.</p>
+    </div>
+  </div>
+  <p class="header-note">Every price below was read on <strong>27 Nov 2026</strong> from the store or a deals roundup that names the store. Prices change — always check at checkout.</p>
+</header>
+
+<section class="stats" id="stats" aria-label="Deal summary"></section>
+
+<main>
+  <section class="hero" aria-label="Deal of the day">
+    <p class="hero-kicker">Deal of the day</p>
+    <div id="hero"></div>
+  </section>
+
+  <section class="compare" aria-label="Same product, different stores">
+    <h2>Same product, different stores</h2>
+    <p class="section-sub">One product we found at more than one store, side by side — so you can see which price is actually the lowest.</p>
+    <div id="compare"></div>
+  </section>
+
+  <section class="finder" id="finder" aria-label="Find a deal">
+    <h2>Find a deal</h2>
+    <div class="toolbar">
+      <label class="search-label">Search
+        <input id="search" type="search" placeholder="Try &ldquo;airpods&rdquo;, &ldquo;tv&rdquo;, &ldquo;robot&rdquo;&hellip;" autocomplete="off">
+      </label>
+      <label>Store
+        <select id="store">
+          <option value="">All stores</option>
+          <option>Amazon</option>
+          <option>Best Buy</option>
+          <option>Walmart</option>
+        </select>
+      </label>
+      <label>At least
+        <select id="min-discount">
+          <option value="0">Any discount</option>
+          <option value="20">20% off</option>
+          <option value="30">30% off</option>
+          <option value="40">40% off</option>
+          <option value="50">50% off</option>
+        </select>
+      </label>
+      <label>Sort by
+        <select id="sort">
+          <option value="best">Best deal first</option>
+          <option value="discount">Biggest discount %</option>
+          <option value="saving">Biggest saving $</option>
+          <option value="price-asc">Lowest price</option>
+          <option value="price-desc">Highest price</option>
+        </select>
+      </label>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No deals match that search. Try a different word, or clear the filters.</p>
+  </section>
+
+  <section class="verdicts" aria-label="How verdicts work">
+    <h2>How the verdicts work</h2>
+    <p>Every card carries a verdict, so a big percentage is never the whole story:</p>
+    <dl>
+      <div><dt><span class="verdict verdict-true-low">TRUE LOW</span></dt><dd>A source reports the lowest price on record for this product.</dd></div>
+      <div><dt><span class="verdict verdict-strong">STRONG DEAL</span></dt><dd>At least 40% off, or at least $150 saved.</dd></div>
+      <div><dt><span class="verdict verdict-good">GOOD DEAL</span></dt><dd>A real saving, 20–39% off.</dd></div>
+      <div><dt><span class="verdict verdict-routine">ROUTINE SALE</span></dt><dd>Under 20% off. A sale, not a steal — the card says so.</dd></div>
+    </dl>
+    <p>Discounts are computed from the two prices on the card, so the percentage always matches the prices you can check.</p>
+  </section>
+</main>
+
+<footer>
+  <h2>How these deals were checked</h2>
+  <p>On 27 Nov 2026 I read each price at the store itself or in a deals roundup that names the store — RedmondPie's live Black Friday list, 9to5Toys, MacObserver, AppleInsider, CNN Underscored, Yahoo shopping, TechRadar, HotHardware and DealNews, plus the Best Buy product pages for the doorbusters. Each card names its source and the day it was read.</p>
+  <p>What I did <em>not</em> do: list a product, price or link no store or roundup showed, or inflate a discount with a made-up usual price. Where two roundups disagreed on a usual price (the Nintendo Switch 2 bundle), the card says so.</p>
+  <p>Prices and stock change fast on Black Friday. A deal can sell out or move between the check and your click — the store link on each card is the final word.</p>
+  <p class="fineprint">Friday Beacon is an independent deal list, not affiliated with Amazon, Best Buy, Walmart or any brand shown. Store and product names belong to their owners. Prices in US dollars, before tax and shipping.</p>
+</footer>
+
+<div class="modal-backdrop" id="modal-backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="modal"></div>
+</div>
+
+<script src="deals.js"></script>
+<script src="filters.js"></script>
+<script src="render.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
